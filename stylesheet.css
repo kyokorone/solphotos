@@ -11,30 +11,31 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #fffffff5;
+    background-blend-mode: luminosity;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #000000;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    text-decoration: underline;
 }
 
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
+    right: 10px;
+    font-size: 18px;
     margin-left: 50px;
 }
 
@@ -52,56 +53,60 @@ body {
 
 .grid-container {
   display: grid;
+  column-gap: 5px;
+  row-gap: 20px;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  width: auto;
 }
 
-.item1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
+.grid-item {
+  position: relative;
 }
 
+.image {
+  position: relative;
+  display: block;
+  width: 95%;
+  height: auto;
+  margin: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
-  .container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image {
-    display: block;
-    width: 50%;
-    height: auto;
-    margin: 10px;
-    object-fit: contain;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/* PHOTOS */
 
-  }
-  
-  /*
-  .overlay {
-    position: absolute;
-    margin: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #0000002c;
-    overflow: hidden;
-    width: 50%;
-    height: 0;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
-    height: 15%;
-  }
-  
-  .text {
-    text-align: right;
-    white-space: nowrap; 
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    overflow: hidden;
-    top: 20%;
-    bottom: 10%;
-    left: 50%;
-    right: 5%;
-  }
+* {box-sizing: border-box;}
+
+.grid-item:hover .overlay {
+  height: 15%;
+}
+
+.overlay {
+  position: absolute;
+  margin: 0px;
+  top: 85%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #00000031;
+  overflow: hidden;
+  width: 95%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.text {
+  text-align: right;
+  white-space: nowrap; 
+  color: white;
+  font-size: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 35%;
+  bottom: 50%;
+  right: 5%;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}
