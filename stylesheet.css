@@ -50,6 +50,16 @@ body {
 
 /* PHOTOS */
 
+.grid-container {
+  display: grid;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
   .container {
     position: relative;
     width: 100%;
@@ -59,15 +69,16 @@ body {
     display: block;
     width: 50%;
     height: auto;
-    /*padding: 5px;*/
     margin: 10px;
     object-fit: contain;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
   
+  /*
   .overlay {
     position: absolute;
+    margin: 10px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -79,7 +90,7 @@ body {
   }
   
   .container:hover .overlay {
-    height: 10%;
+    height: 15%;
   }
   
   .text {
