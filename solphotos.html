@@ -6,6 +6,10 @@
     <title>Sol Photography</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+    image {
+        position: absolute;
+        left: 400px;
+    }
         #navigate {
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
@@ -23,6 +27,7 @@
             color: black;
         }
     </style>
+        <script src="image-transition.js" />
 </head>
 
 <body>
@@ -75,6 +80,8 @@
     <br>
 
     <!-- HOMEPAGE PHOTOS -->
+
+    <img id="image-container" onload="changeImage()" src="photos/street1.webp" width="1000">
 
     <div class="grid-container">
         <div class="grid-item">
