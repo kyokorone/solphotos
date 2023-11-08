@@ -5,6 +5,24 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Sol Photography</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #navigate {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navigate a:hover {
+            font-weight: bolder;
+            font-size: larger;
+            transition: 0.5s ease-in-out;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,28 +30,30 @@
     <!-- NAVIGATION BAR -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="file:///D:/GitHub%20Repository/logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+        <img src="logo\finallogo.webp" alt="logo"
             style="height: 125px; width: auto;">
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/solphotos.html">home</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/about.html">about</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html">portfolio</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#street"
+        <a href="solphotos.html">home</a>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="portfolio.html#street"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#travel"
+        <a href="portfolio.html#travel"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#event"
+        <a href="portfolio.html#event"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#experimental"
+        <a href="portfolio.html#experimental"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#commissions"
+        <a href=portfolio.html#commissions"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/blog.html">blog</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/booking">booking</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/contacts.html">contact</a>
+        <a href="blog.html">blog</a>
+        <a href="booking.html">booking</a>
+        <a href="contacts.html">contact</a>
     </div>
 
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; solphotos</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src="logo\finallogo.webp" alt="logo"
+            style="height: 125px; width: auto; padding-top: 15px;">
+    </span>
 
     <script>
         function openNav() {
@@ -45,47 +65,80 @@
         }
     </script>
 
+    <!-- HEAD BAR -->
+    <hr>
+    <div id="navigate">
+        <p> home //</p>
+        <p> welcome to solphotos.</p>
+    </div>
+    <hr>
+    <br>
+
     <!-- HOMEPAGE PHOTOS -->
 
     <div class="grid-container">
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street1.webp" alt="street" class="image">
-            <div class="overlay">
-                <div class="text">street photography</div>
-            </div>
+            <a href="portfolio.html#street">
+                <img src="photos/street1.webp" alt="street" class="image">
+                <div class="overlay">
+                    <div class="text">street photography</div>
+                </div>
+            </a>
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/ezgif.com-gif-maker.webp" alt="street" class="image">
-            <div class="overlay">
-                <div class="text">travel photography</div>
-            </div>
+            <a href="portfolio.html#travel">
+                <img src="photos/ezgif.com-gif-maker.webp" alt="travel" class="image">
+                <div class="overlay">
+                    <div class="text">travel photography</div>
+                </div>
+            </a>
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/ezgif.com-gif-maker-event.webp" alt="street" class="image">
-            <div class="overlay">
-                <div class="text">event photography</div>
-            </div>
+            <a href="portfolio.html#event">
+                <img src="photos/ezgif.com-gif-maker-event.webp" alt="event"
+                    class="image">
+                <div class="overlay">
+                    <div class="text">event photography</div>
+                </div>
+            </a>
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/ezgif.com-gif-maker-bday.webp" alt="street" class="image">
-            <div class="overlay">
-                <div class="text">commissions</div>
-            </div>
-        </div>
-        <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/artsy.webp" alt="street" class="image">
-            <div class="overlay">
-                <div class="text">experimental</div>
-            </div>
-        </div>
+            <a href="portfolio.html#commissions">
+                <img src="photos/ezgif.com-gif-maker-bday.webp" alt="commissions"
+                    class="image">
 
+                <div class="overlay">
+                    <div class="text">commissions</div>
+                </div>
+            </a>
+        </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/ezgif.com-gif-maker-girl.webp" alt="street" class="image">
-            <div class="overlay">
-                <div class="text">recent photography</div>
-            </div>
+            <a href="portfolio.html#experimental">
+                <img src="photos/artsy.webp" alt="experimental" class="image">
+                <div class="overlay">
+                    <div class="text">experimental</div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="portfolio.html">
+                <img src="photos/ezgif.com-gif-maker-girl.webp" alt="recent photography"
+                    class="image">
+                <div class="overlay">
+                    <div class="text">recent photography</div>
+                </div>
+            </a>
         </div>
     </div>
+
+    <!-- FOOTER -->
+    <br>
+    <hr>
+    <div id="navigate">
+        <p> solphotos //</p>
+        <p> angela sol henson 2023</p>
+    </div>
+    <hr>
 
 </body>
 

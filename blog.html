@@ -5,6 +5,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        #navigate {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navigate a:hover {
+            font-weight: bolder;
+            font-size: larger;
+            transition: 0.5s ease-in-out;
+            text-decoration: none;
+            color: black;
+        }
+
+        .column {
+            text-align: justify;
+            width: 50%;
+            float: left;
+
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #000000cc;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: rgb(255, 255, 255);
+            font-family: inherit;
+            font-size: 16px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,40 +85,117 @@
     <!-- NAVIGATION BAR -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="file:///D:/GitHub%20Repository/logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+        <img src="logo\finallogo.webp" alt="logo"
             style="height: 125px; width: auto;">
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/solphotos.html">home</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/about.html">about</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html">portfolio</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#street"
+        <a href="solphotos.html">home</a>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="portfolio.html#street"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#travel"
+        <a href="portfolio.html#travel"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#event"
+        <a href="portfolio.html#event"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#experimental"
+        <a href="portfolio.html#experimental"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#commissions"
+        <a href=portfolio.html#commissions"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/blog.html">blog</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/booking">booking</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/contacts.html">contact</a>
+        <a href="blog.html">blog</a>
+        <a href="booking.html">booking</a>
+        <a href="contacts.html">contact</a>
     </div>
 
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; solphotos</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src="logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+            style="height: 125px; width: auto; padding-top: 15px;">
+    </span>
 
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         }
-
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
 
+    <!-- HEAD BAR -->
+    <hr>
+    <p id="navigate">solphotos mini blog //</p>
+    <p id="navigate">little scrapbook to share photography-related bits of life,
+        for the memories and the growth.</p>
+    <hr>
+
     <!-- BODY CONTENT -->
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                <img src="photos/blog4.webp" alt="blog4" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <p>friday, oct 6th, 2023</p>
+                        <p>lutas film festival day 2! was fun.<br>attended with a few succ members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <img src="photos/blog3.webp" alt="blog3" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <p>friday, oct 5th, 2023</p>
+                        <p>lutas film festival day 1! was fun.<br>i really loved the archipelago short films, truly the
+                            a24 of the ph.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                <img src="photos/blog2.webp" alt="blog3" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <p>friday, oct 8th, 2023</p>
+                        <p>breast cancer funrun for a cause.<br>woke up at 4am for this, man. it was a good way<br>to
+                            start the day, though.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <img src="photos/blog1.webp" alt="blog1" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <p>friday, sept 29th, 2023</p>
+                        <p>ccs acquaintance party.<br>was enjoyable. good chicken cordon bleu. was shooting for
+                            fun<br>(and for ge10), but i managed to get some goos shots, hehe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <br>
+    <hr>
+    <div id="navigate">
+        <p> solphotos //</p>
+        <a href="solphotos.html"
+            id="navigate">home&nbsp;&nbsp;&nbsp;</a>
+        <a href="about.html"
+            id="navigate">about&nbsp;&nbsp;&nbsp;</a>
+		<a href="portfolio.html"
+            id="navigate">portfolio&nbsp;&nbsp;&nbsp;</a>
+        <a href="blog.html" id="navigate">blog&nbsp;&nbsp;&nbsp;</a>
+        <a href="booking.html"
+            id="navigate">bookings&nbsp;&nbsp;&nbsp;</a>
+        <a href="contacts.html" id="navigate">contact</a>
+    </div>
+    <hr>
 
 </body>
 

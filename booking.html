@@ -5,6 +5,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .column {
+            text-align: justify;
+            width: 40%;
+            float: left;
+            padding: 15px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .image {
+            height: auto;
+            width: 90%;
+            padding: 5px;
+            box-shadow: none;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        #navigate {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: normal;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        #navigate a:hover {
+            font-weight: bolder;
+            font-size: large;
+            transition: 0.5s ease;
+            text-decoration: underline;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,28 +56,30 @@
     <!-- NAVIGATION BAR -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="file:///D:/GitHub%20Repository/logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+        <img src="logo\finallogo.webp" alt="logo"
             style="height: 125px; width: auto;">
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/solphotos.html">home</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/about.html">about</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html">portfolio</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#street"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#travel"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#event"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#experimental"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#commissions"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/blog.html">blog</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/booking">booking</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/contacts.html">contact</a>
-        </div>
+        <a href="solphotos.html">home</a>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="portfolio.html#street"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
+        <a href="portfolio.html#travel"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
+        <a href="portfolio.html#event"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
+        <a href="portfolio.html#experimental"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
+        <a href=portfolio.html#commissions"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
+        <a href="blog.html">blog</a>
+        <a href="booking.html">booking</a>
+        <a href="contacts.html">contact</a>
+    </div>
 
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; solphotos</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src="file:///D:/GitHub%20Repository/logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+            style="height: 125px; width: auto; padding-top: 15px;">
+    </span>
 
     <script>
         function openNav() {
@@ -45,8 +91,61 @@
         }
     </script>
 
+    <!-- HEAD BAR -->
+    <hr>
+    <p id="navigate">bookings //</p>
+    <p id="navigate">book angela sol as your next photographer!</p>
+    <hr>
+
     <!-- BODY CONTENT -->
 
-    
+    <div class="row">
+        <div class="column">
+            <img src="photos/booking.webp" class="image"></a>
+        </div>
+        <div class="column"><br><br>
+            <h3>interested in booking?</h3>
+            <p>At an affordable rate, you can book angela as your next photographer. experienced in different kinds of
+                events, from shooting at Luce Auditorium,
+                sports events, university events at Silliman, street photography, and even some creative shoots, she has
+                a decent amount of experience on her hands.
+            </p>
+            <h3>what are the details?</h3>
+            <p>Simply put, all you need are your event details and your contact Information. Once you fill out the following
+                Google Form, Angela will contact you as soon as she can and yoo'll go from there.</p>
+            <hr>
+            <a href="https://forms.gle/vQV3mP4ZBczicvvw9" id="navigate" style="font-weight: bold; font-size: 20px;">click here to book!</a>
+            <hr>
+            <h3>details needed:</h3>
+            <p> &nbsp;&nbsp;&nbsp;Name of Event:<br>
+                &nbsp;&nbsp;&nbsp;Date:<br>
+                &nbsp;&nbsp;&nbsp;Time:<br>
+                &nbsp;&nbsp;&nbsp;Estimated No. of People during the Event:<br>
+                &nbsp;&nbsp;&nbsp;Contact Person:<br>
+                &nbsp;&nbsp;&nbsp;Contact No.:<br>
+                &nbsp;&nbsp;&nbsp;Any Special Instructions for the Event:</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <br>
+    <hr>
+    <div id="navigate">
+        <p> solphotos //</p>
+        <a href="solphotos.html"
+            id="navigate">home&nbsp;&nbsp;&nbsp;</a>
+        <a href="about.html"
+            id="navigate">about&nbsp;&nbsp;&nbsp;</a>
+		<a href="portfolio.html"
+            id="navigate">portfolio&nbsp;&nbsp;&nbsp;</a>
+        <a href="blog.html" id="navigate">blog&nbsp;&nbsp;&nbsp;</a>
+        <a href="booking.html"
+            id="navigate">bookings&nbsp;&nbsp;&nbsp;</a>
+        <a href="contacts.html" id="navigate">contact</a>
+    </div>
+    <hr>
+
+
 </body>
+
 </html>

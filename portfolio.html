@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <style>
-
         .grid-container {
             display: grid;
-            column-gap: 5px;
-            row-gap: 5px;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: auto auto;
             justify-content: center;
             width: auto;
+        }
+
+
+        #navigate {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navigate a:hover {
+            font-weight: bolder;
+            font-size: larger;
+            transition: 0.5s ease-in-out;
+            text-decoration: none;
+            color: black;
         }
     </style>
 </head>
@@ -23,28 +38,31 @@
     <!-- NAVIGATION BAR -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="file:///D:/GitHub%20Repository/logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+        <img src="logo\finallogo.webp" alt="logo"
             style="height: 125px; width: auto;">
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/solphotos.html">home</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/about.html">about</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html">portfolio</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#street"
+        <a href="solphotos.html">home</a>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="portfolio.html#street"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#travel"
+        <a href="portfolio.html#travel"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#event"
+        <a href="portfolio.html#event"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#experimental"
+        <a href="portfolio.html#experimental"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#commissions"
+        <a href=portfolio.html#commissions"
             style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/blog.html">blog</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/booking">booking</a>
-        <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/contacts.html">contact</a>
+        <a href="blog.html">blog</a>
+        <a href="booking.html">booking</a>
+        <a href="contacts.html">contact</a>
     </div>
 
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; solphotos</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src="logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+            style="height: 125px; width: auto; padding-top: 15px;">
+    </span>
 
     <script>
         function openNav() {
@@ -56,30 +74,34 @@
         }
     </script>
 
-    <!-- BODY CONTENT -->
-    <h1 id="portfolio">sol photography</h1>
-
-    <a href="#street">street photography</a>
-    <a href="#travel">travel photography</a>
-    <a href="#event">event photography</a>
-    <a href="#experimental">experimental photography</a>
-    <a href="#commissions">commissioned photography</a>
+    <!-- NAVIGATION HEADER -->
 
     <hr>
+    <div id="navigate">
+        <p>portfolio //</p>
+        <a href="#street" id="navigate">street&nbsp;&nbsp;&nbsp;</a>
+        <a href="#travel" id="navigate">travel&nbsp;&nbsp;&nbsp;</a>
+        <a href="#event" id="navigate">event&nbsp;&nbsp;&nbsp;</a>
+        <a href="#experimental" id="navigate">experimental&nbsp;&nbsp;&nbsp;</a>
+        <a href="#commissions" id="navigate">commissions</a>
+    </div>
+    <hr>
+
+    <!--PORTFOLIO CONTENT-->
 
     <h2 id="street" style="text-align: center; font-weight: normal;">street photography</h2>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/street.webp" alt="street1" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street1.webp" alt="street" class="image">
+            <img src="photos/street1.webp" alt="street2" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/street2.webp" alt="street3" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/street4.webp" alt="street4" class="image">
         </div>
     </div>
     <br>
@@ -87,16 +109,16 @@
     <h2 id="travel" style="text-align: center; font-weight: normal;">travel photography</h2>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/travel1.webp" alt="travel1" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street1.webp" alt="street" class="image">
+            <img src="photos/travel2.webp" alt="travel2" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/ezgif.com-gif-maker.webp" alt="travel3" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/travel3.webp" alt="travel4" class="image">
         </div>
     </div>
     <br>
@@ -104,16 +126,22 @@
     <h2 id="event" style="text-align: center; font-weight: normal;">event photography</h2>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/event1.webp" alt="event1" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street1.webp" alt="street" class="image">
+            <img src="photos/event2.webp" alt="event2" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/event3.webp" alt="event3" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/event4.webp" alt="event4" class="image">
+        </div>
+        <div class="grid-item">
+            <img src="photos/event5.webp" alt="event5" class="image">
+        </div>
+        <div class="grid-item">
+            <img src="photos/event6.webp" alt="event6" class="image">
         </div>
     </div>
     <br>
@@ -121,16 +149,16 @@
     <h2 id="experimental" style="text-align: center; font-weight: normal;">experimental photography</h2>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/artsy.webp" alt="artsy" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street1.webp" alt="street" class="image">
+            <img src="photos/artsy2.webp" alt="artsy2" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/artsy3.webp" alt="artsy3" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/artsy4.webp" alt="artsy4" class="image">
         </div>
     </div>
     <br>
@@ -138,19 +166,41 @@
     <h2 id="commissions" style="text-align: center; font-weight: normal;">commissioned photography</h2>
     <div class="grid-container">
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/commissioned1.webp" alt="commissioned1" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street1.webp" alt="street" class="image">
+            <img src="photos/commissioned2.webp" alt="commissioned2" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/commissioned3.webp" alt="commissioned3" class="image">
         </div>
         <div class="grid-item">
-            <img src="file:///D:/GitHub%20Repository/photos/street.webp" alt="street" class="image">
+            <img src="photos/commissioned4.webp" alt="commissioned4" class="image">
+        </div>
+        <div class="grid-item">
+            <img src="photos/commissioned5.webp" alt="commissioned5" class="image">
+        </div>
+        <div class="grid-item">
+            <img src="photos/commissioned6.webp" alt="commissioned6" class="image">
         </div>
     </div>
+    <br>
+
+    <!--FOOTER-->
     <hr>
+    <div id="navigate">
+        <p> solphotos //
+            <a href="portfolio.html" id="navigate">back to top</a>
+        </p>
+        <a href="solphotos.html"
+            id="navigate">home&nbsp;&nbsp;&nbsp;</a>
+        <a href="about.html"
+            id="navigate">about&nbsp;&nbsp;&nbsp;</a>
+        <a href="blog.html" id="navigate">blog&nbsp;&nbsp;&nbsp;</a>
+        <a href="booking.html"
+            id="navigate">bookings&nbsp;&nbsp;&nbsp;</a>
+        <a href="contacts.html" id="navigate">contact</a>
+    </div>
     <hr>
 
 

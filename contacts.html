@@ -5,6 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+
+        .column {
+            text-align: justify;
+            width: 30%;
+            float: left;
+            padding: 15px;
+            margin-left: 30px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        #navigate {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navigate a:hover {
+            font-weight: bolder;
+            font-size: larger;
+            transition: 0.5s ease-in-out;
+            text-decoration: none;
+            color: black;
+        }
+
+        .contact {
+            width: 100%;
+            padding: 5%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 100%;
+        }
+
+        .image {
+            width: 100%;
+            padding: 5px;
+            box-shadow: none;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -12,28 +66,30 @@
     <!-- NAVIGATION BAR -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="file:///D:/GitHub%20Repository/logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+        <img src="logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
             style="height: 125px; width: auto;">
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/solphotos.html">home</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/about.html">about</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html">portfolio</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#street"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#travel"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#event"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#experimental"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#commissions"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/blog.html">blog</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/booking">booking</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/contacts.html">contact</a>
-        </div>
+        <a href="solphotos.html">home</a>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="portfolio.html#street"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
+        <a href="portfolio.html#travel"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
+        <a href="portfolio.html#event"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
+        <a href="portfolio.html#experimental"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
+        <a href="portfolio.html#commissions"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
+        <a href="blog.html">blog</a>
+        <a href="booking,html">booking</a>
+        <a href="contacts.html">contact</a>
+    </div>
 
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; solphotos</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src="logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+            style="height: 125px; width: auto; padding-top: 15px;">
+    </span>
 
     <script>
         function openNav() {
@@ -45,25 +101,56 @@
         }
     </script>
 
+    <!-- HEAD BAR -->
+    <hr>
+    <p id="navigate">contact //</p>
+    <hr>
+
     <!-- BODY CONTENT -->
-    <div class="section">
-        <div class="container">
-            <div class="content-section">
-                <div class="title">
-                    <h1>Contact Us</h1>
-                </div>
-                <div class="content">
-                    <p>We'd love to hear from you!</p>
-                    <p>Feel free to contact us for inquiries or any questions you may have.</p>
-                    <p>Email: <a href="mailto:Solphotography@gmail.com">Solphotography@gmail.com</a></p>
-                    <p>Mobile: +09757676880</p>
-                </div>
-                <div class="button">
-                    <a href="contact.html">Get in Touch</a>
-                </div>
-            </div>
+
+<div class="row">
+    <div class="column">
+        <img src="photos/contact4.webp" class="image">
+        <img src="photos/contact2.webp" class="image">
+</div>
+    <div class="column">
+        <div class="contact">
+            <h3>need to contact solphotos?</h1>
+                <p>Feel free to contact the SolPhotos team regarding any inquiries or questions you may have in mind.</p>
+                <p>email: <a href="mailto:angelaphenson@su.edu.ph" style="text-decoration: underline; color: black;">angelaphenson@su.edu.ph</a></p>
+                <p>email: <a href="mailto:ninovincentccaiipay@su.edu.ph" style="text-decoration: underline; color: black;">ninovincentccaiipay@su.edu.ph</a></p>
+                <p>mobile: +09762087956</p>
+                <h3>want to follow solphotos on social media?</h3>
+                <a href="https://www.facebook.com/kyokorone/" style="text-decoration: underline; color: black;">facebook</a>
+                <a href="https://www.instagram.com/lvoezukkyun/" style="text-decoration: underline; color: black;">instagram</a>
         </div>
     </div>
-    
+    <div class="column">
+            <img src="photos/contact3.webp" class="image">
+            <img src="photos/contact1.webp" class="image">
+    </div>
+</div>
+
+
+
+    <!-- FOOTER -->
+    <br>
+    <hr>
+    <div id="navigate">
+        <p> solphotos //</p>
+        <a href="solphotos.html"
+            id="navigate">home&nbsp;&nbsp;&nbsp;</a>
+        <a href="about.html"
+            id="navigate">about&nbsp;&nbsp;&nbsp;</a>
+		<a href="portfolio.html"
+            id="navigate">portfolio&nbsp;&nbsp;&nbsp;</a>
+        <a href="blog.html" id="navigate">blog&nbsp;&nbsp;&nbsp;</a>
+        <a href="booking.html"
+            id="navigate">bookings&nbsp;&nbsp;&nbsp;</a>
+        <a href="contacts.html" id="navigate">contact</a>
+    </div>
+    <hr>
+
 </body>
+
 </html>

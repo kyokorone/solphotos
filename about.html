@@ -5,6 +5,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .column {
+            text-align: justify;
+            width: 33.33%;
+            float: left;
+            padding: 15px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        #navigate {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: normal;
+            text-decoration: none;
+            color: black;
+        }
+
+        #navigate a:hover {
+            font-weight: bolder;
+            font-size: large;
+            transition: 0.5s ease;
+            text-decoration: none;
+            color: black;
+        }
+
+        .image {
+            width: 100%;
+            padding: 5px;
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,27 +54,30 @@
     <!-- NAVIGATION BAR -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="file:///D:/GitHub%20Repository/logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+        <img src="logo\finallogo.webp" alt="logo"
             style="height: 125px; width: auto;">
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/solphotos.html">home</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/about.html">about</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html">portfolio</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#street"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#travel"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#event"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#experimental"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/portfolio.html#commissions"
-                style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/blog.html">blog</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/booking">booking</a>
-            <a href="file:///D:/GitHub%20Repository/solphotos/solphotos/contacts.html">contact</a>
-        </div>
+        <a href="solphotos.html">home</a>
+        <a href="about.html">about</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="portfolio.html#street"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;street</a>
+        <a href="portfolio.html#travel"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;travel</a>
+        <a href="portfolio.html#event"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event</a>
+        <a href="portfolio.html#experimental"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experimental</a>
+        <a href=portfolio.html#commissions"
+            style="font-size:20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;commissions</a>
+        <a href="blog.html">blog</a>
+        <a href="booking.html">booking</a>
+        <a href="contacts.html">contact</a>
+    </div>
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; solphotos</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <img src="logo/ezgif.com-gif-maker-finallogo.webp" alt="logo"
+            style="height: 125px; width: auto; padding-top: 15px;">
+    </span>
 
     <script>
         function openNav() {
@@ -44,39 +89,65 @@
         }
     </script>
 
+    <!-- HEAD BAR -->
+    <hr>
+    <p id="navigate">about //</p>
+    <p id="navigate">about solphotos & the photographer.</p>
+    <hr>
+
     <!-- BODY CONTENT -->
-    <div class="section">
-        <div class="container">
-            <div class="content-section">
-                <div class="title">
-                    <h1>About Sol Photography</h1>
-                </div>
-                <div class="content">
-                    <h3>Welcome to Sol Photography</h3>
-                    <p>At Sol Photography, we specialize in capturing life's beautiful moments through our lens. Our
-                        dedicated team of skilled photographers is committed to preserving your most cherished memories.
-                        Whether it's a wedding, a family portrait, a special event, or a professional headshot, we
-                        provide the expertise and creativity to make your photos truly special.</p>
-                    <p>Our commitment to quality and attention to detail ensure that your photographs will be treasured
-                        for years to come. We understand that every client has unique needs, and we work closely with
-                        you to tailor our services to match your vision.</p>
-                    <p>Explore our gallery to see some of the stunning work we've produced. We are passionate about
-                        creating images that tell a story and evoke emotions.</p>
-                </div>
-                <div class="button">
-                    <a href="booking.html">Book Now</a>
-                </div>
-                <div class "social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="image-section">
-                <!-- You can place images or slideshows of your photography work here. -->
-            </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="photos/angela.webp" class="image"></a>
+        </div>
+        <div class="column">
+            <h3>what is solphotos?</h3>
+            <p>SolPhotos is dedicated to capturing moments in everyday life.
+                Whether it's the streets of Dumaguete, a trip to another town, special events, or a portrait of a new
+                friend, photography has the power to preserve such kinds of memories forever. With this in mind, this
+                site is a collection of these moments, for keepsakes.</p>
+            <h3>who is solphotos?</h3>
+            <p>Angela Sol is a student photographer living in Dumaguete City, Negros Oriental. Currently taking up
+                a Bachelors degree in Information and Technology at Silliman University, she has been a dedicated member
+                of The Silliman University Camera Club since 2022. She's experienced in event and street photography, but
+                has a soft spot for ezperimental photography... although she has yet to dive into it more.
+            </p>
+            <p>Angela grew up in Greer, South Carolina, USA, moving to Dumaguete City in 2015 at 11 years old.
+                Her love for photography began at a young age, starting with portraits of her dolls in the backyard of
+                her home. During her junior high years, she took a summer photography class under the mentorship of
+                established Dumaguete photographer, <a href="facebook.com/urichcalumpang" id="navigate"><u>Urich Calumpang.</u></a>
+                ever since, she has been practicing and ever-growing her skills in photography, especially through the <a
+                href="https://www.facebook.com/SUCameraClub" id="navigate"><u>Silliman University Camera Club</u></a>
+                and its passionate community.
+            </p>
+        </div>
+        <div class="column">
+            <img src="photos/SUCCa.webp" class="image"></a>
+            <img src="photos/SUCCb.webp" class="image"></a>
+            <p style="text-align: right; margin-right: 8px; font-size: small;">The Silliman University Camera Club 2022-2023</p>
         </div>
     </div>
+
+
+    <!-- FOOTER -->
+    <br>
+    <hr>
+    <div id="navigate">
+        <p> solphotos //</p>
+        <a href="solphotos.html"
+            id="navigate">home&nbsp;&nbsp;&nbsp;</a>
+        <a href="about.html"
+            id="navigate">about&nbsp;&nbsp;&nbsp;</a>
+		<a href="portfolio.html"
+            id="navigate">portfolio&nbsp;&nbsp;&nbsp;</a>
+        <a href="blog.html" id="navigate">blog&nbsp;&nbsp;&nbsp;</a>
+        <a href="booking.html"
+            id="navigate">bookings&nbsp;&nbsp;&nbsp;</a>
+        <a href="contacts.html" id="navigate">contact</a>
+    </div>
+    <hr>
+
 </body>
 
 </html>
